@@ -1,0 +1,103 @@
+baseURL: "https://www.felix-golatofski.de/"
+title: "Portfolio"
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Personal Blog
+                  url: https://blog.morphnet.work
+                  weight: 5
+
+    de:
+        languageName: "Deutsch"
+        weight: 2
+        menu:
+            main:
+                - name: Persönlicher Blog
+                  url: https://blog.morphnet.work
+                  weight: 5
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "My own space on the Internet"
+    author: Felix Golatofski
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    # comments: false
+
+    profileMode:
+        enabled: true
+        title: "Felix Golatofski" # optional default will be site title
+        subtitle: "All good. What about you?"
+        imageUrl: "https://avatars.githubusercontent.com/u/8057646?v=4" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+
+    socialIcons: # optional
+        - name: "GitHub"
+          url: "https://github.com/GoliathLabs"
+        - name: "Twitter"
+          url: "https://twitter.com/officialfelixx"
+        - name: "Instagram"
+          url: "https://www.instagram.com/officialfelixx/"
+        - name: "LinkedIn"
+          url: "https://www.linkedin.com/in/felix-golatofski/"
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
