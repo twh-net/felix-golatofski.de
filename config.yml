@@ -1,4 +1,4 @@
-baseURL: "https://www.felix-golatofski.de/"
+baseURL: "https://www.moosy.de/"
 title: "Portfolio"
 paginate: 5
 theme: PaperMod
@@ -9,28 +9,20 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-
+languageCode: de-DE
+defaultContentLanguage: de
 minify:
     disableXML: true
     # minifyOutput: true
 
 languages:
-    en:
-        languageName: "English"
+    de:
+        languageName: "Deutsch"
         weight: 1
         menu:
             main:
-                - name: Personal Blog
-                  url: https://blog.morphnet.work
-                  weight: 5
-
-    de:
-        languageName: "Deutsch"
-        weight: 2
-        menu:
-            main:
-                - name: Persönlicher Blog
-                  url: https://blog.morphnet.work
+                - name: Meine Software
+                  url: https://www.telefonbucheditor.de
                   weight: 5
 
 outputs:
@@ -57,21 +49,18 @@ params:
 
     profileMode:
         enabled: true
-        title: "Felix Golatofski" # optional default will be site title
-        subtitle: "All good. What about you?"
-        imageUrl: "https://avatars.githubusercontent.com/u/8057646?v=4" # optional
+        title: "Michael Moosbauer" # optional default will be site title
+        imageUrl: "/images/avatar.png" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
 
     socialIcons: # optional
         - name: "GitHub"
-          url: "https://github.com/GoliathLabs"
-        - name: "Twitter"
-          url: "https://twitter.com/officialfelixx"
+          url: "https://github.com/moosy"
+        - name: "eMail"
+          url: "mailto:info@michael-moosbauer.de"
         - name: "Instagram"
-          url: "https://www.instagram.com/officialfelixx/"
-        - name: "LinkedIn"
-          url: "https://www.linkedin.com/in/felix-golatofski/"
+          url: "https://www.instagram.com/michaelmoosbauer"
 
 markup:
     goldmark:
